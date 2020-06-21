@@ -26,7 +26,7 @@ public class Logic {
         int index = this.findBy(source);
         if (index != -1) {
             Cell[] steps = this.figures[index].way(source, dest);
-            if (steps.length > 0 && steps[steps.length - 1].equals(dest)) {
+            if (steps.length > 0 && steps[steps.length - 1].equals(dest) && isEmpty(steps)) {
                 rst = true;
                 this.figures[index] = this.figures[index].copy(dest);
             }
@@ -57,5 +57,14 @@ public class Logic {
         return "Logic{"
                 + "figures=" + Arrays.toString(this.figures)
                 + '}';
+    }
+
+    public boolean isEmpty(Cell[] cells) {
+        for (Cell cell : cells) {
+            if (findBy(cell) != -1) {
+                return false;
+            }
+        }
+        return true;
     }
 }

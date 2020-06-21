@@ -9,10 +9,10 @@
     <url>http://job4j.ru</url>
 
     <properties>
-        <maven.compiler.source>14</maven.compiler.source>
-        <maven.compiler.target>14</maven.compiler.target>
+        <maven.compiler.source>12</maven.compiler.source>
+        <maven.compiler.target>12</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <javafx.version>14</javafx.version>
+        <javafx.version>12</javafx.version>
     </properties>
 
     <modules>
@@ -28,28 +28,28 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <version>${javafx.version}</version>
+            <version>14</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.openjfx/javafx-graphics -->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-graphics</artifactId>
-            <version>${javafx.version}</version>
+            <version>14</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.openjfx/javafx-base -->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-base</artifactId>
-            <version>${javafx.version}</version>
+            <version>14</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.openjfx/javafx-controls -->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>${javafx.version}</version>
+            <version>14</version>
         </dependency>
 
 
@@ -82,8 +82,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>14</source>
-                    <target>14</target>
+                    <source>12</source>
+                    <target>12</target>
                 </configuration>
             </plugin>
             <plugin>
